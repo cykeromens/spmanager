@@ -1,0 +1,46 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-2.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+        >
+
+<head>
+    <title>CykerOmensInc :: Users</title>
+</head>
+<body>
+
+<div th:include="header::head"/>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1 th:text="${chirp.title}">Title</h1>
+                    <h2 class="subheading" th:text="${chirp.subtitle}">Subtitle</h2>
+                    <span class="meta">Posted by <a th:href="@{|/users/${chirp.user.id}|}"><div th:text="${chirp.user.username}"></div></a><div th:text="chirp.createdDate.getTime"></div></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" th:text="${chirp.message}">
+
+                <p th:text="${chirp.message}"></p>
+
+
+            </div>
+        </div>
+    </div>
+</article>
+<div th:include="footer::foot"/>
+</body>
+</html>
+
+<hr/>

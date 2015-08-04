@@ -1,0 +1,64 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-2.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+        >
+
+<head>
+    <title>CykerOmensInc :: Users</title>
+</head>
+<body>
+
+<div th:include="header::head"/>
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Recent Chirps</h1>
+                    <hr class="small"/>
+                    <span class="subheading">Proudly just for you</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div>
+                <a th:href="@{/chirps?form}">New Chirp</a>
+            </div>
+            <div th:each="chirp : ${chirps}">
+                <div class="post-preview">
+                    <a th:href="@{|/chirps/${chirp.id}|}">
+                        <h2 class="post-title" th:text="${chirp.title}">
+                            Man must explore, and this is exploration at its greatest
+                        </h2>
+                        <h3 class="post-subtitle" th:text="${chirp.subtitle}">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a th:href="@{|/users/${chirp.user.id}|}"><em th:text="${chirp.user.username}">cykeromens</em></a> <em th:text="${chirp.createdDate.getTime()}">on July 24, 2015</em></p>
+                </div>
+                <hr/>
+            </div>
+
+            <hr/>
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="next">
+                    <a href="#">Older Posts &rarr;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div th:include="footer::foot"/>
+</body>
+</html>
