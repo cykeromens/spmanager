@@ -6,12 +6,12 @@
 
 package com.cykeromens.model.user;
 
-import java.io.Serializable;
-import java.time.LocalDateTime;
-import javax.persistence.Column;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.Embeddable;
 import javax.validation.constraints.Past;
-import org.springframework.format.annotation.DateTimeFormat;
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  *

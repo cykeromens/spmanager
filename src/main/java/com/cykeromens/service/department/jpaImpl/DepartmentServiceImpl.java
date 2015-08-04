@@ -7,10 +7,8 @@
 package com.cykeromens.service.department.jpaImpl;
 
 import com.cykeromens.model.department.Department;
-import com.cykeromens.service.department.DepartmentService;
 import com.cykeromens.repository.department.DepartmentRepository;
-import java.util.Optional;
-
+import com.cykeromens.service.department.DepartmentService;
 import com.cykeromens.web.form.department.DepartmentForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,6 +16,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Optional;
 
 /**
  *

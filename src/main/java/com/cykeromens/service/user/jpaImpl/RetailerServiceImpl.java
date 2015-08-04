@@ -7,25 +7,20 @@
 package com.cykeromens.service.user.jpaImpl;
 
 
-
 import com.cykeromens.model.user.retailer.Retailer;
 import com.cykeromens.repository.user.UserRepository;
+import com.cykeromens.repository.user.retailer.RetailerRepository;
 import com.cykeromens.service.user.RetailerService;
 import com.cykeromens.web.form.user.RetailerEditForm;
-import com.cykeromens.repository.user.retailer.RetailerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.scheduling.annotation.Scheduled;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoField;
 import java.util.Collection;
 import java.util.Optional;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  *

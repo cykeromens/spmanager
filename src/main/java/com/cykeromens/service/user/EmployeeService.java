@@ -6,14 +6,12 @@
 
 package com.cykeromens.service.user;
 
-import com.cykeromens.model.user.User;
 import com.cykeromens.model.user.employee.Employee;
-import com.cykeromens.service.user.UserService;
-import java.util.List;
-
 import com.cykeromens.web.form.user.EmployeeEditForm;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+
+import java.util.List;
 
 /**
  *

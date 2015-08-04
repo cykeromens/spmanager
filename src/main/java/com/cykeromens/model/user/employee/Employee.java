@@ -6,8 +6,8 @@
 
 package com.cykeromens.model.user.employee;
 
-import com.cykeromens.model.user.User;
 import com.cykeromens.model.department.Department;
+import com.cykeromens.model.user.User;
 import com.cykeromens.web.form.user.EmployeeEditForm;
 import org.springframework.data.annotation.Transient;
 import org.springframework.format.annotation.DateTimeFormat;

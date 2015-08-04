@@ -7,6 +7,7 @@
 package com.cykeromens.model.image;
 
 import com.cykeromens.model.DomainEntity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;

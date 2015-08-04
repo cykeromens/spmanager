@@ -7,28 +7,16 @@
 package com.cykeromens.model.user.retailer;
 
 
+import com.cykeromens.model.user.Role;
 import com.cykeromens.model.user.User;
 import com.cykeromens.model.user.employee.Employee;
 import com.cykeromens.model.user.retailer.account.Account;
-import com.cykeromens.model.user.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import java.time.LocalDateTime;
-import java.util.Collection;
-import java.util.List;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-import org.springframework.data.annotation.Transient;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
 
 /**
  *

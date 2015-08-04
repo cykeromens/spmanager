@@ -8,18 +8,17 @@ package com.cykeromens.service.user.jpaImpl;
 
 import com.cykeromens.model.user.employee.Employee;
 import com.cykeromens.repository.user.UserRepository;
-import com.cykeromens.service.user.jpaImpl.UserServiceImpl;
-import com.cykeromens.web.form.user.EmployeeEditForm;
 import com.cykeromens.repository.user.employee.EmployeeRepository;
 import com.cykeromens.service.user.EmployeeService;
-
-import java.util.List;
+import com.cykeromens.web.form.user.EmployeeEditForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  *

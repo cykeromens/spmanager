@@ -8,7 +8,6 @@ package com.cykeromens.model.store;
 
 
 import com.cykeromens.model.DomainEntity;
-import com.cykeromens.model.contact.ContactDetails;
 import com.cykeromens.model.store.category.Category;
 import com.cykeromens.model.store.products.Product;
 import com.cykeromens.model.user.retailer.Retailer;
@@ -16,9 +15,9 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-import java.util.Collection;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import java.util.Collection;
 
 /**
  *

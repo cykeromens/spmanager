@@ -6,10 +6,8 @@
 package com.cykeromens.service.location.jpaImpl;
 
 import com.cykeromens.model.location.Country;
-import com.cykeromens.service.location.CountryService;
 import com.cykeromens.repository.location.CountryRepository;
-
-import org.springframework.beans.factory.annotation.Autowired;
+import com.cykeromens.service.location.CountryService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;

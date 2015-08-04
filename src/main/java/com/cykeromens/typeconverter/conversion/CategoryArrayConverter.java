@@ -8,12 +8,13 @@ package com.cykeromens.typeconverter.conversion;
 
 import com.cykeromens.model.store.category.Category;
 import com.cykeromens.service.store.category.CategoryService;
-import java.util.ArrayList;
-import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.ConversionFailedException;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.Converter;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  *

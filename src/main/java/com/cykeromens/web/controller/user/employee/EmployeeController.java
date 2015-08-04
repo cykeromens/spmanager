@@ -6,14 +6,12 @@
 
 package com.cykeromens.web.controller.user.employee;
 
-import com.cykeromens.model.department.Department;
-import com.cykeromens.model.image.Image;
 import com.cykeromens.model.location.Country;
 import com.cykeromens.model.user.Role;
 import com.cykeromens.model.user.UserTitle;
 import com.cykeromens.model.user.employee.Employee;
-import com.cykeromens.service.user.EmployeeService;
 import com.cykeromens.service.department.DepartmentService;
+import com.cykeromens.service.user.EmployeeService;
 import com.cykeromens.web.form.user.EmployeeEditForm;
 import com.cykeromens.web.util.Message;
 import com.cykeromens.web.util.UrlUtil;
@@ -23,16 +21,16 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 /**
  *

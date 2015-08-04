@@ -9,12 +9,7 @@ package com.cykeromens.model.contact;
 import com.cykeromens.model.DomainEntity;
 import com.cykeromens.model.location.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  *

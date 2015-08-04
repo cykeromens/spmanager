@@ -7,8 +7,6 @@
 package com.cykeromens.service.mail;
 
 
-import org.springframework.stereotype.Service;
-
 /**
  *
  * @author cykeromens

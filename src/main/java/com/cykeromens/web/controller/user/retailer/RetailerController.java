@@ -7,31 +7,20 @@
 package com.cykeromens.web.controller.user.retailer;
 
 import com.cykeromens.model.user.retailer.Retailer;
-import com.cykeromens.service.user.EmployeeService;
 import com.cykeromens.service.department.DepartmentService;
 import com.cykeromens.service.location.CountryService;
-import com.cykeromens.service.user.RetailerService;
 import com.cykeromens.service.store.category.CategoryService;
+import com.cykeromens.service.user.EmployeeService;
+import com.cykeromens.service.user.RetailerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
-import java.security.Principal;
-import java.util.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 /**
  *

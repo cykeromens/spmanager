@@ -9,13 +9,14 @@ package com.cykeromens.service.store.jpaImpl;
 import com.cykeromens.model.store.Store;
 import com.cykeromens.repository.store.StoreRepository;
 import com.cykeromens.service.store.StoreService;
-import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Optional;
 
 /**
  *
